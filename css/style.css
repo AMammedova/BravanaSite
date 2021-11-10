@@ -1,0 +1,255 @@
+ /* Defaults */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+a{
+    text-decoration: none;
+
+}
+li{
+    list-style: none;
+}
+/* End Defaults */
+
+/* start navigation */
+#header .container{
+    display: flex;
+}
+#header{
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.2) ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+}
+.container{
+    width: 75%;
+    margin: auto;
+    
+}
+#logo{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+#navigation{
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    align-items: center;
+}
+#navigation ul{
+    display: flex;
+}
+#navigation > ul >li > a{
+    color: #3B3B3B;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 27px 15px;
+    display: inline-block;
+}
+#navigation > ul > li > a:hover{
+    color: #69B417;
+}
+#navigation > ul > li.active > a{
+    color: #69B417;
+}
+.shop-wrapper a i{
+    font-size: 16px;
+}
+.product-count{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #69B417;
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top:20%;
+    right:2%;
+}
+.shop-wrapper a{
+    position: relative;
+}
+/* End Navigation */
+
+/* Start Main */
+#main{
+    margin-top:71px ;
+}
+/* End Main */
+
+/* Start Intro */
+#intro{
+    background-image: url('../img/intro.png');
+    background-size: cover;
+    height: 500px;
+    padding: 60px 0px 500px 0px ;
+    
+
+}
+.intro-text {
+    color:#636363;
+font-weight: 50;
+}
+.intro-button a{
+    color: #fff;
+    padding: 10px 20px;
+
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding:15px 20px ;
+}
+.intro-button a:first-child{
+background-color: #69B417;
+border: 1px solid #69B417;
+
+}
+
+
+.intro-button a:last-child{
+    background-color: #636363;
+    border: 1px solid rgb(93, 91, 91);
+}
+
+.intro-button{
+    margin-top: 50px;
+    
+    
+}
+/* End Intro */
+/* Start Basket */
+#basket{
+    background-color: #fff;
+    position: absolute;
+    top: 120%;
+    right: 0;
+    width: 400px;
+    display: none;
+
+}
+#basket .basket-info{
+    background-color: rgb(172, 166, 166);
+    color: #fff;
+    text-transform: none;
+    font-weight: bold;
+    padding: 10px ;
+
+}
+#basket .basket-info span{
+    color: #69B417;
+}
+.basket-product{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.basket-product li{
+    display: flex;
+}
+#basket .basket-info span{
+    color: #69B417;
+}
+.product-image img{
+    width: 50px;
+    height: 50px;
+}
+.product-info p{
+    color: #8c8c8c;
+    font-size: 12px;
+    text-transform: none;
+    font-weight: bold;
+}
+.product-info{
+    padding: 10px;
+}
+.product-info span{
+    color: #8c8c8c;
+    font-size: 10px;
+    text-transform: none;
+    font-weight: bold;
+}
+.basket-product li i{
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    color: #000;
+
+}
+.basket-product li{
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e7e2e2;
+
+}
+.shop-wrapper a:hover #basket{
+display: flex;
+flex-direction: column;
+top: 100%;
+visibility: visible;
+transition: all 0.4s ease-in-out;
+}
+
+/* End Basket */
+.features{
+    margin-bottom: 100px;
+}
+#features .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.features-item{
+    text-align: center;
+    color: #8c8c8c;
+    margin: 40px 0px;
+    width: 30%;
+}
+.features-item h4{
+   color: #726f6f; 
+}
+.features-item > i{
+    font-size: 1.5em;
+}
+.features-item p{
+    font-size: 14px;
+    line-height: 1.8em;
+    margin: 15px 0px;
+}
+.features-item a{
+    color: #69B417;
+    font-size: 0.9em;
+
+}
+/* Story start */
+#story h2{
+    color: #636363;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+
+}
+#story-content{
+    display: flex;
+}
+.story-image{
+    width: 40%;
+}
+.story-text{
+width: 60%;
+}
+.story-text h3{
+    color: #636363;
+    margin-bottom: 16px;
+}
+.story-text p{
+    font-size: 1.1em;
+    color: #8c8c8c;
+    margin-bottom: 15px;
+    line-height: 1.4em;
+}
